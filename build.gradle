@@ -1,0 +1,12 @@
+plugins {
+    id 'groovy'
+    id 'com.shuvs.file-diff' version '1.0-SNAPSHOT'
+}
+
+group = 'com.shuvs.plugins'
+version = '1.0-SNAPSHOT'
+
+filediff {
+    file1 = file("$projectDir/src/main/resources/file1.txt")
+    file2 = file("$projectDir/src/main/resources/file2.txt")
+}
